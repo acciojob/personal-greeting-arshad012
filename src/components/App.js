@@ -1,9 +1,9 @@
 
-import {useState} from "react";
+import React from "react";
 import './../styles/App.css';
 
 const App = () => {
-  const [text, setText] = useState('');
+  const [text, setText] = React.useState('');
 
   return (
     <div>
