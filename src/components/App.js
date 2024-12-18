@@ -8,8 +8,9 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <input onChange={(e) => setText(e.target.value)} />
-        <h1>{text}</h1>
+       <label>Enter your name:</label>
+        <input type="text" onChange={(e) => setText(e.target.value)} />
+        {text && <h1>Hello {text}!</h1>}
     </div>
   )
 }
